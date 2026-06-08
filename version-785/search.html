@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>影片搜索-必看电影</title>
+  <meta name="description" content="搜索国产影视剧、高清电影、电视剧集、动画和多地区影视作品。" />
+  <meta name="keywords" content="影片搜索,电影搜索,电视剧搜索,国产影视剧全集免费看_高清电影在线-必看电影,国产,视频,免费,在线观看,高清,影视大全" />
+  <link rel="stylesheet" href="./assets/css/site.css" />
+  
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="./index.html" aria-label="必看电影">
+      <span class="brand__mark">▶</span>
+      <span class="brand__text">
+        <span class="brand__name">必看电影</span>
+        <span class="brand__tagline">国产影视剧全集免费看</span>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./rank.html">热播榜</a><a class="nav-link is-active" href="./search.html">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片、地区、类型" aria-label="搜索影片" />
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-menu-button" type="button" data-mobile-menu-button aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form class="mobile-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片" />
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./rank.html">热播榜</a><a class="nav-link is-active" href="./search.html">搜索</a>
+    </nav>
+  </div>
+</header>
+  <main>
+
+    <div data-search-page>
+    <section class="search-hero">
+      <div class="container">
+        <h1>影片搜索</h1>
+        <form action="search.html" method="get" data-search-form>
+          <input type="search" name="q" placeholder="输入片名、地区、年份、类型" data-search-input aria-label="搜索影片" />
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+    <section class="search-results">
+      <div class="container">
+        
+<div class="section-heading">
+  <span>RESULTS</span>
+  <h2>搜索结果</h2>
+  <p>可按影片名称、地区、年份、类型与关键词查找相关内容。</p>
+</div>
+        <div class="movie-grid movie-grid--small" data-search-results></div>
+        <div class="empty-state" data-search-empty style="display:none;">没有找到匹配影片。</div>
+      </div>
+    </section>
+    </div>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html"><span>▶</span>必看电影</a>
+      <p>提供国产影视剧全集的免费观看，以及高清电影的在线播放服务。本站资源丰富，以国产内容为特色，涵盖剧集与电影，是影视爱好者的常用在线平台。</p>
+    </div>
+    <div>
+      <h2>快速入口</h2>
+      <ul>
+        <li><a href="./index.html">首页推荐</a></li>
+        <li><a href="./categories.html">分类片库</a></li>
+        <li><a href="./rank.html">热播榜</a></li>
+        <li><a href="./search.html">影片搜索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <ul><li><a href="./categories/selected.html">精选片库</a></li><li><a href="./categories/new-release.html">新片上线</a></li><li><a href="./categories/cinema.html">高清电影</a></li><li><a href="./categories/tv-series.html">电视剧集</a></li><li><a href="./categories/china-focus.html">国产焦点</a></li><li><a href="./categories/asia-picks.html">亚洲精选</a></li></ul>
+    </div>
+    <div>
+      <h2>观影频道</h2>
+      <p>覆盖国产影视剧、高清电影、电视剧集、动画动漫和多地区佳片。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 必看电影</div>
+</footer>
+  <script src="./assets/js/site.js"></script>
+  <script src="./assets/js/movie-index.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

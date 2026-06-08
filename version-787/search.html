@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影视搜索-日韩影视高清播放</title>
+  <meta name="description" content="日韩影视全站搜索，支持按影片名、地区、年份、类型、标签检索电影与电视剧详情页。">
+  <meta name="keywords" content="影视搜索,日韩剧搜索,电影搜索,电视剧搜索,日韩影视,日韩剧,韩剧,日剧,国产剧,欧美剧,电视剧在线观看,电影免费看,高清播放,热门剧集,高分影视">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-custom site-nav" aria-label="主导航">
+      <a class="site-logo" href="./index.html" aria-label="日韩影视首页">
+        <span class="site-logo-icon">▶</span>
+        <span class="site-logo-text">
+          <strong>日韩影视</strong>
+          <small>热门电视剧电影在线播放高清</small>
+        </span>
+      </a>
+      <button class="mobile-menu-button" type="button" aria-label="打开导航" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="site-nav-panel" data-menu-panel>
+        <div class="site-nav-links">
+          <a class="nav-link" href="./index.html">首页</a>
+          <a class="nav-link" href="./categories.html">分类</a>
+          <a class="nav-link" href="./ranking.html">排行榜</a>
+          <a class="nav-link" href="./category-rihan-jingxuan.html">日韩精选</a><a class="nav-link" href="./category-remen-dianying.html">热门电影</a><a class="nav-link" href="./category-gaofen-juji.html">高分剧集</a>
+        </div>
+        <form class="site-search" action="./search.html" method="get" role="search">
+          <input type="search" name="q" placeholder="搜索影片、地区、标签" autocomplete="off">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container-custom">
+        <span class="hero-kicker">日韩影视 · 全站搜索</span>
+        <h1>搜索影片</h1>
+        <p>输入影片名、地区、年份、类型或标签，快速定位对应影片详情页。</p>
+        <form class="search-page-form" action="./search.html" method="get" role="search">
+          <input type="search" name="q" placeholder="例如：韩剧、悬疑、2025、日本" data-search-page-input>
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container-custom">
+        <div class="section-heading">
+          <div>
+            <h2>搜索结果</h2>
+            <p><span data-search-result-count>0</span> 个匹配结果</p>
+          </div>
+        </div>
+        <div class="movie-grid four-cols" data-search-results></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container-custom footer-grid">
+      <section>
+        <div class="footer-logo"><span>▶</span><strong>日韩影视</strong></div>
+        <p>专注整理高清影视片单，覆盖日韩剧、韩剧、日剧、国产剧、欧美剧、电影与高分剧集。</p>
+      </section>
+      <section>
+        <h2>快速导航</h2>
+        <ul>
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./categories.html">分类总览</a></li>
+          <li><a href="./ranking.html">热门排行榜</a></li>
+          <li><a href="./search.html">全站搜索</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>内容分类</h2>
+        <ul><li><a href="./category-rihan-jingxuan.html">日韩精选</a></li><li><a href="./category-remen-dianying.html">热门电影</a></li><li><a href="./category-gaofen-juji.html">高分剧集</a></li><li><a href="./category-zuixin-shangxin.html">最新上新</a></li><li><a href="./category-xuanyi-jingsong.html">悬疑惊悚</a></li><li><a href="./category-dongzuo-maoxian.html">动作冒险</a></li><li><a href="./category-aiqing-xiju.html">爱情喜剧</a></li><li><a href="./category-jingdian-jiapian.html">经典佳片</a></li></ul>
+      </section>
+      <section>
+        <h2>观看体验</h2>
+        <p>支持高清播放、移动端浏览和相关推荐，方便继续发现更多内容。</p>
+      </section>
+    </div>
+    <div class="container-custom footer-bottom">
+      <p>© 2026 日韩影视. 内容索引用于影视资讯展示。</p>
+      <button type="button" class="back-to-top" data-back-to-top>返回顶部</button>
+    </div>
+  </footer>
+  <script src="./assets/js/search-data.js"></script>
+  <script src="./assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
